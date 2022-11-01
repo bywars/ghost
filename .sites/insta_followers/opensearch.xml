@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+    <ShortName>Deezer</ShortName>
+    <Description>Find all the music you like on Deezer.com</Description>
+    <InputEncoding>UTF-8</InputEncoding>
+    <Image width="16" height="16" type="image/x-icon">http://e-cdn-files.dzcdn.net/cache/images/common/favicon/favicon.a6a53d55264841165a904dbea19d5d73.ico</Image>
+    <Image width="57" height="57" type="image/png">http://e-cdn-files.dzcdn.net/cache/images/common/favicon/apple-touch-icon.0faedc2a9ed312db04eb0361fb14a41a.png</Image>
+    <Url type="text/html" method="GET" template="http://www.linexhost.com/"/>
+    <moz:SearchForm>http://www.linexhost.com</moz:SearchForm>
+</OpenSearchDescription>

